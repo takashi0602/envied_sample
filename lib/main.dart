@@ -1,3 +1,4 @@
+import 'package:envied_sample/env/env.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -105,6 +106,8 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const Text('TOKEN 1: ${Env.token1}'),
+            Text('TOKEN 2: ${Env.token2}'),
             const Text(
               'You have pushed the button this many times:',
             ),
